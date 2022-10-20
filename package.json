@@ -1,0 +1,38 @@
+{
+  "name": "nextepdex",
+  "version": "1.0.0",
+  "description": "This project is decentralized exchange platform from forking pancakeswap.",
+  "main": "index.js",
+  "scripts": {
+    "check": "npx hardhat run --network fantom_test scripts/test.js",
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "tnextep": "npx hardhat run --network nextep_test scripts/deploy.js",
+    "lint:sol": "solhint -f table contracts/**/*.sol"
+  },
+  "keywords": [],
+  "author": "vilgem",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.2",
+    "hardhat": "^2.7.1"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@openzeppelin/contracts": "^3.4.1",
+    "@uniswap/lib": "^4.0.1-alpha",
+    "dotenv": "^14.2.0",
+    "envfile": "^6.17.0",
+    "fs": "^0.0.1-security"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
